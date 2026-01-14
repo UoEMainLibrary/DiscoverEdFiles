@@ -1,0 +1,348 @@
+/* 
+ * DiscoverEd CSS
+ *
+ * Ianthe Sutherland
+ * June 2015
+ *
+ * Dark Blue: #09305f
+ * Medium Blue: #005684
+ * Light Blue: #00a6ca
+ * Teal: #569f9c
+ * Red: #dd0743
+ */
+
+#exlidHomeBody {
+    background: #ffffff;
+    width: 100%;
+    display: inline-block;
+}
+
+br.small {
+    margin-top: -8px;
+}
+
+div.clearfix {
+    clear: both;
+}
+
+a:hover {
+    color: #00a6ca;
+}
+
+div.spacedlink {
+    padding-top: 5px;
+    margin-bottom: -10px;
+}
+
+#exlidHomeContainer h1 {
+    color: #005684;
+    font-size: 115%;
+    padding-bottom: 10px;  
+}
+
+#exlidHomeContainer h2,
+#exlidHomeContainer h2 a {
+    color: #00a6ca;
+    font-size: 110%;
+    padding: 4px 0;
+}
+
+#exlidHomeContainer h3 {
+    color: #569f9c;
+    font-size: 105%;
+    padding: 10px 0;
+}
+
+#exlidHomeContainer h4 {
+    color: #1b325e;
+    font-size: 100%;
+    padding: 10px 0;
+}
+
+div.EXLHomeWhatContainer div.SearchImage {
+    text-align: center;
+}
+
+div.EXLHomeDiscoverEdContainer {
+    padding-bottom: 5px;
+}
+
+div.EXLHomeServicesContainer p {
+    padding-bottom: 5px;
+}
+
+div.EXLHomeServicesContainer ul {
+    list-style: outside none none;
+}
+
+div.EXLHomeServicesContainer li {
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bullet_arrow_teal.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    line-height: 150%;
+    text-indent: 1em;
+}
+
+div.EXLHomeServicesContainer {
+    margin-top: 5px;
+}
+
+#exlidSearchRibbon input.submit {
+    background-color: #00a6ca;
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_strip_btn_blue.png");
+}
+
+#exlidAdvancedSearchRibbon input.submit,
+.EXLMyAccountMainContainer form input.submit {
+    background-color: #00a6ca;
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_strip_btn_blue.png");
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormClearSearch input {
+    background-color: #569f9c;
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_strip_btn_grey.png");
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbon {
+    margin-bottom: 5px;
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+    clear: none;
+}
+
+#exlidHomeContainer 
+div.EXLHomeBlockContainer1 {
+    margin-bottom: 1em;
+}
+
+#exlidHomeContainer
+div.EXLContentBlock3 {
+    padding-left: 6px;
+}
+
+#exlidHomeContainer 
+div.EXLContentBlock3 
+div.EXLHomeBannerContainer1 {
+    width: 448px;
+    background: none;
+    border: none;
+}
+
+div.searchtipnumber {
+    float: left;
+    width: 10%;
+}
+
+div.searchtip {
+    float: left;
+    width: 40%;
+}
+
+#exlidHomeContainer 
+div.EXLContentBlock4 
+div.EXLHomeBannerContainer1 {
+    width: 437px;
+    background: none;
+    border: 1px solid #569f9c;
+    border-radius: 12px;
+    padding: 5px;
+
+}
+
+#exlidHomeContainer 
+div.EXLHomeBlockContainer2 
+div.EXLContentBlock4 {
+    padding-left: 1em;
+}
+
+div.socialmediatext {
+    float: left;
+    width: 45%;
+}
+
+div.icons {
+    float: left;
+    width: 100%;
+    padding-top: 20px;/
+}
+
+div.facebookicon,
+div.twittericon,
+div.blogicon {
+    float: right;
+    width: 64px;
+    margin-left: 10px;
+}
+
+.EXLFooterTile {
+    background: none;
+    background-color: #1b325e;
+    border: none;
+    min-height: 100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.EXLFooterTile 
+div.EXLFooterLinksContainer {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.centerfooter {
+    display: block;
+    width: 60em;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.islogo {
+    float: left;
+    width: 88px;
+    padding-right: 20px;
+}
+
+.footerlinks {
+    width: 615px;
+    text-align: center;
+    float: left;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.footerlinks a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footerlinks a:hover {
+    color: #00a6ca;
+}
+
+.EXLFooterTile li {
+    border: none;
+    float: left;
+    padding-right: 0.8em;
+    text-indent: 0.5em;
+}
+
+.EXLFooterTile 
+ul.EXLFooterLinksList2 {
+    padding-left: 35px;
+    padding-top: 1em;
+}
+
+.EXLFooterTile 
+div.EXLFooterUpdateContainer 
+div.EXLFooterAutoUpdate {
+    margin-top: -100px;
+}
+
+div.EXLFooterAutoUpdate label {
+    color: #ffffff;
+}
+
+.EXLResultsList 
+span.EXLResultVersionFound {
+    color: #00a6ca;
+}
+
+.EXLResultsList 
+div.EXLSummaryContainer 
+cite.EXLResultFRBR {
+    background-color: #00a6ca;
+}
+
+.EXLResultsList 
+div.EXLSummaryContainer 
+cite.EXLResultFRBR 
+span.EXLResultBgFRBR {
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_diagonal_frbr.png");
+}
+
+a.EXLBriefResultsDisplayMultipleLink:link {
+    color: #ffffff;
+}
+
+a.EXLBriefResultsDisplayMultipleLink:hover {
+    color: #1b325e;
+    text-decoration: underline;
+}
+
+.EXLFacetContainer h3 {
+    background-color: #00a6ca;
+    border-bottom: 1px solid #005684;
+    border-top: 1px solid #005684;
+    color: #ffffff;
+}
+
+.EXLFacetContainer h1 {
+    background-color: #005684;
+    border-bottom: 1px solid #1b325e;
+    border-top: 1px solid #1b325e;
+    color: #ffffff;
+}
+
+.EXLSliderRefine a, .EXLSliderRefine a:hover {
+    background-color: #005684;
+    border: 1px solid #1b325e;
+    color: #ffffff;
+    height: 26px;
+    margin: 0;
+    padding: 3px 5px 2px;
+}
+
+.EXLSliderRefine a:hover {
+    background-color: #00a6ca;
+}
+
+.EXLFacetTile a:link,
+.ExLFacetTile a:visited {
+    color: #005684;
+}
+
+.EXLMyAccountMainMenuContainer 
+ol li span.EXLMyAccountMainMenuBulletSelected {
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bullet_myAccount_menu.png");
+}
+
+.EXLMyAccountTabsRibbon 
+div li.EXLMyAccountSelectedTab {
+    background-color: #00a6ca;
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_strip_btn_blue.png");
+    border-color: #00a6ca;
+}
+
+.EXLMyAccountTabsRibbon {
+    border-bottom: 2px solid #00a6ca;
+}
+
+.buttonGo a {
+    background-color: #00a6ca;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.buttonGo a:link {
+    color: #ffffff;
+}
+
+.EXLPopupImportCitationContainer div.EXLPopupImportCitationButtonLink span input {
+    background-color: #00a6ca;
+    background-image: url("../css/images/bg_strip_btn_blue.png");
+}
+
+#contentEXL {
+    min-height: 100%;
+    position:relative;
+}
+
+#exlidResultsContainer {
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+}

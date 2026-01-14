@@ -1,0 +1,180 @@
+/* Adjustments needed for Kiosk view */
+
+
+/* Remove personalisation */
+
+#exlidUserAreaRibbon {display:none}
+
+
+/* Remove More and View online tabs as some electronic is deduped and FRBRd with Physical*/
+.EXLResult .EXLMoreTab {display:none;}
+.EXLResult .EXLViewOnlineTab {display:none;}
+
+/* Remove rss feed and add to eshelf option */
+
+.EXLFacetContainer div.EXLFacetActionsV2 li {
+  display:none;
+}
+/* Remove help */
+#exlidMainMenuRibbon li.EXLLastItem {display:none;}
+
+/* different colour for kiosk */
+/* turquoise: #00a6ca
+ * green: #488583
+ * lighter blue: #005684
+ * navy: #1b325e
+ */
+
+#exlidHeaderTile {
+    background-color: #488583;
+}
+
+#exlidHeaderContainer {
+    background-color: #488583;
+}
+
+#exlidHomeContainer {
+    font-size: 90%;
+}
+
+#exlidHomeContainer h1 {
+    color: #005684;
+    font-size: 140%;
+}
+
+#exlidHomeContainer h2, #exlidHomeContainer h2 a {
+    color: #488583;                               
+    font-size: 115%;
+}           
+    
+#exlidHomeContainer h3 {
+    color: #005684;                               
+    font-size: 110%;
+}           
+
+div.EXLHomeContainer ul {
+    list-style: outside none none;
+}
+ 
+div.EXLHomeContainer li {
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bullet_arrow_teal.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    line-height: 150%;
+    text-indent: 1em;
+}
+
+div.EXLHomeContainer li.twolines {
+    background-position: 0 20%;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 {
+    width: 45%;
+    padding-left: 20px;
+}
+
+#exlidMainMenuTile {
+    background: #488583 none repeat scroll 0 0;
+ }
+
+#exlidSearchTileWrapper {
+    background-color: #488583;
+}
+
+.EXLFooterHolder {
+    background: #488583 none repeat scroll 0 0;
+}
+
+#exlidSearchRibbon input.submit,
+#exlidAdvancedSearchRibbon input.submit, 
+.EXLMyAccountMainContainer form input.submit {
+    background-color: #596f9c;
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_strip_btn_teal.png");
+}
+
+/* search results page */
+.EXLFacetContainer h3 {
+    background-color: #488583;
+    border-bottom: 1px solid #005684;
+    border-top: 1px solid #005684;
+}
+
+.EXLSliderRefine a, .EXLSliderRefine a:hover {  
+    background-color: #488583;
+    border: 1px solid #7f9db9;
+}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
+    background-color: #488583;
+}
+
+.EXLResultsList span.EXLResultVersionFound {
+    color: #488583;
+}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {
+    background-image: url("http://discoveredfiles.is.ed.ac.uk/images/bg_diagonal_frbr_green.png");
+}
+
+/* fixing white stripe after footer */
+.EXLFooterTile {
+	display: block;
+}
+
+.EXLFooterTile ul {
+    padding: 1em 0 1em 0.5em;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling for dialog boxes */
+.ui-widget-header {
+    background: #488583 none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
+
+.ui-widget-content {
+    color: #777676 !important;
+}
+
+.ui-widget {
+    font-family: Arial,verdana !important;
+    font-size: 1em !important;
+}
+
+.ui-widget p{
+    font-size: 0.85em !important;
+}
+
+.ui-widget-header .ui-icon {
+    background-color: #dadada !important;
+}
+
+em.EXLTabHeaderContentAdditionalDataLineSignIn {
+    display: none;
+}
+
+li.EXLButtonSendToMyShelf  
+{
+   display: none  !important;
+}
+
+li.EXLButtonSendToPrint 
+{
+   display: none  !important;
+}
+
+li.EXLButtonSendToEndNote 
+{
+   display: none  !important;
+}
+
+li.EXLButtonSendToRISPushTo
+{
+   display: none !important;
+}

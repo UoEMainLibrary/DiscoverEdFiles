@@ -1,0 +1,60 @@
+.EXLButtonSendToRISPushTo,
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToRISPushTo,
+div#exlidTabHeaderButtons-1.EXLTabHeaderButtons ul li.EXLTabHeaderButtonSendTo ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToRISPushTo,
+html body.EXLFullView.EXLCurrentLang_en_US div#content.EXLCustomLayoutContainer.EXLContent.EXLFullDisplay div#exlidHomeBody.EXLCustomLayoutContainer.EXLHomeBody div#exlidResultsContainer.EXLCustomLayoutContainer.EXLResultsContainer div#resultsTileNoId.EXLCustomLayoutContainer.EXLResultsTile div#resultsListNoId.EXLCustomLayoutTile.EXLResultsList div.EXLSummary.EXLResult div#exlidResult0-TabContainer-detailsTab.EXLResultTabContainer.EXLContainer-detailsTab div#exlidResult-1-TabHeader.EXLTabHeader div#exlidTabHeaderButtons-1.EXLTabHeaderButtons ul li.EXLTabHeaderButtonSendTo ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToRISPushTo {
+    display: none !important;
+}
+
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToEndNote {
+    display: none;
+}
+
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToMyShelf,
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToMyShelfAdd {
+    display: none !important;
+}
+
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToPrint {
+    display: none;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+    float: left;
+    padding-left: 0.5em;
+    width: 100%;
+}
+
+#exlidHomeContainer h1 {
+    font-size: 200%;
+}
+
+#exlidHomeContainer p {
+    font-size: 150%;
+}
+
+#contentEXL {
+    height: 100%;
+}
+
+#exlidHomeBody {
+    min-height: 70%;
+}
+
+li.fp {
+margin-left: 20px;
+}
+
+.EXLFooterTile div.EXLFooterUpdateContainer {
+    float: right;
+    padding-right: 1em;
+    padding-top: 0;
+    text-align: left;
+    width: auto;
+}
+
+/* remove search links from advanced search*/
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks {
+    display: none;
+}
+
+

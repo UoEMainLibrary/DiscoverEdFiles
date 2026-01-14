@@ -1,0 +1,32 @@
+bootstrap/
+jquery/
+
+The Bootstrap and jQuery libraries are provided here for convenience.
+
+demo/
+
+A demonstration of the components of the Edinburgh Experience Language, together with doncumentation on their use. 
+
+gel/
+
+The CSS and JS for the Edinburgh Experience Language.  This requires Bootstrap.
+
+You can use grunt to watch and compile the LESS files, from the theme
+directory:
+First time install the local node_modules with "npm install".
+Then just use "grunt" to watch and compile the LESS files when you
+have grunt-cli installed.
+
+References:
+   https://nodejs.org/
+   http://gruntjs.com/getting-started
+
+Install node.js from nodejs.org, then from the theme directory use the
+following commands
+
+npm install -g grunt-cli
+npm install
+grunt
+
+The npm installs only need to be done once on your system, thereafter you
+just need to run grunt to watch the LESS directory for changes.

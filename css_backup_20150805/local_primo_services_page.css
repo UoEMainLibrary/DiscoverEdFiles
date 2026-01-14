@@ -1,0 +1,22 @@
+#exlidUserAreaTile {
+    display: none;
+}
+#exlidSearchTile {
+    display: none;
+}
+#exlidMainMenuRibbon li.EXLMainMenuItem.EXLLastItem {
+    display: none;
+}
+#exlidHeaderSearchLimits {
+    display: none;
+}
+
+.EXLResultsHeader.EXLResultsFooter {
+    display: none;
+}
+.EXLReviewsTab.EXLResultTab {
+    display: none;
+}
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li.EXLButtonSendToPermalink {
+    display: none;
+}

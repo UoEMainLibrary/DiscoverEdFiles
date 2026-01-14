@@ -1,0 +1,15 @@
+/*extra css to position prefilter dropdown*/
+
+/*remove bottom border line */
+#exlidSearchTile {
+	border-bottom-width: 0px !important;
+}
+/*add graduated background graphic*/
+#exlidHeaderSearchLimits {
+	background-image: url("../images/bg_strip_searchPanel.png") !important;
+}
+/*postion dropdown below search button*/
+#exlidHeaderSearchLimits fieldset {
+	margin-left: 500px !important;	
+}
+

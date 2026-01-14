@@ -1,0 +1,2 @@
+# Ignore npm/grunt installed files.
+node_modules/*

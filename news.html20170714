@@ -1,0 +1,55 @@
+<div class="EXLHomeNewsContainer">
+    <!--iframe width="458" height="252" src="https://www.youtube.com/embed/4KHfgGDq_hI?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe-->
+   <iframe width="458" height="252" src="https://www.youtube.com/embed/jm21ZJhZUMo?rel=0&amp;controls=1&amp;showinfo=1" frameborder="0" id="howToFindABook" title="How to Find a Book" allowfullscreen></iframe>
+   <div class="clearfix"></div>
+   <div class="spacedlink">
+       <!--a href="">More video help</a-->
+   </div>
+</div>
+<div class="EXLHomeServicesContainer">
+    <h2>Help</h2>
+    <ul>
+        <li>More information <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/discovery/discovered" target="_blank">about DiscoverEd</a></li>
+        <li>Check the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/discovery/discovered/faqs" target="_blank">FAQs</a></li>
+   </ul> 
+   <h2>Can't find what you're looking for?</h2>
+   <p>Some online resources are not in DiscoverEd.</p>
+   <ul>
+   	<li>Go to the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/finding-resources/library-databases" target="_blank">Databases A-Z</a></li>
+   </ul>
+   <h2>If the Library doesn't have what you want:</h2>
+   <ul>
+   	<li>Use <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/finding-resources/library-resources-plus" target="_blank">Library Resources Plus</a></li>
+   </ul>
+   <h2>Feedback:</h2>
+Take five minutes to complete a short survey and tell us what you think of DiscoverEd.</a>
+<ul>
+<li>Complete the <a href="https://edinburgh.onlinesurveys.ac.uk/discovered-feedback-2015-16-copy" target="_blank" alt="Tell us of what you think of DiscoverEd" title="Tell us of what you think of DiscoverEd">survey</a></li>
+</ul>
+
+
+    <h2>Contact Helpline</h2>
+    <ul>
+        <li>IS Helpline: <a href="mailto:is.helpline@ed.ac.uk">is.helpline@ed.ac.uk</a></li>
+        <li>Phone: +44 (0)131 651 5151</li>
+    </ul>
+
+                <div class="icons">
+                    <div class="blogicon">
+                        <a href="http://libraryblogs.is.ed.ac.uk/" target="_blank">
+                            <img src="http://discoveredfiles.is.ed.ac.uk/images/blogicon.png">
+                        </a>
+                    </div>
+                    <div class="twittericon">
+                        <a href="https://twitter.com/EdUniLibraries" target="_blank">
+                            <img src="http://discoveredfiles.is.ed.ac.uk/images/twittericon.png">
+                        </a>
+                    </div>
+                    <div class="facebookicon">
+                        <a href="https://www.facebook.com/EdUniLibraries" target="_blank">
+                            <img src="http://discoveredfiles.is.ed.ac.uk/images/facebookicon.png">
+                        </a>
+                    </div>
+                </div>
+</div>
+

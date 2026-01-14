@@ -1,0 +1,52 @@
+<html style="height:50px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="css/discovered.css" media="all" />
+<script type="text/javascript">
+function searchPrimo() {
+document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+document.forms["searchForm"].submit();
+}
+</script>
+
+
+
+</head>
+<body>
+<!--<div class="container">-->
+<div  class="dcontainer">
+
+<div class="dimage"><a href="https://discovered.ed.ac.uk" target="new" title="Go to DiscoverEd" alt="Go to DiscoverEd"><img src="http://libbranding.is.ed.ac.uk/graphics/eds/discovered50.png" width="203px" class="noborder" /></a></div>
+
+<form id="simple" name="searchForm" method="get" target="_blank" action="https://discovered.ed.ac.uk/primo-explore/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()" class="dform">
+<!-- Customizable Parameters -->
+<input type="hidden" name="institution" value="44UOE">
+<input type="hidden" name="vid" value="44UOE_VU2">
+<!--<input type="hidden" name="tab" value="default_tab">-->
+<input type="hidden" name="search_scope" value="default_scope">
+<!--<input type="hidden" name="mode" value="Basic">-->
+<!-- Fixed parameters -->
+<!--<input type="hidden" name="displayMode" value="full">-->
+<!--<input type="hidden" name="bulkSize" value="10">-->
+<!--<input type="hidden" name="highlight" value="true">-->
+<!--<input type="hidden" name="dum" value="true">-->
+<input type="hidden" name="query" id="primoQuery">
+<!--<input type="hidden" name="displayField" value="all">-->
+<!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
+<input type="hidden" name="pcAvailabiltyMode" value="true">
+<div class="dmiddle">
+<input type="text" id="primoQueryTemp" size="35" value="" class="dinput">
+</div>
+<div class="dsubmit">
+<!-- Search Button -->
+<input id="go" title="Search" onclick="searchPrimo()" type="button" value="Search" alt="Search" class="searchsubmit dbutton">
+</div>
+</form> 
+
+
+</div> 
+<!--</div>-->
+</body>
+</html>
+ 
+

@@ -1,0 +1,10 @@
+<div class="EXLHomeDiscoverEdContainer">
+      	<h1>What is DiscoverEd?</h1>
+      	<p>DiscoverEd is the Library's discovery service. Use it to search the Library's collections: this includes books, e-books, journal titles, journal articles, databases and more. Use EASE to sign into your Library Account and manage loans, renewals, requests and fines.</p>  
+</div>
+<div class="EXLHomeWhatContainer">	
+    <h2>What am I searching?</h2>
+    <div class="SearchImage">
+        <img src="http://discoveredfiles.is.ed.ac.uk/images/DiscoverEdSearch.png"/>
+    </div>    
+</div>

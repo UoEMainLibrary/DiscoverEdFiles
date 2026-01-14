@@ -1,0 +1,268 @@
+/* Bootstrap additions
+------------------------------------------------------------------------------- */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  display: block;
+}
+
+.container, .jumbotron .container {
+  width: 100%;
+  max-width: 90rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container, .jumbotron .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+a {
+  h1, h2, h3, h4, h5, h6, p, ul, ol {
+    color: #428bca;
+  }
+}
+
+.page-header h1, h1.page-header {
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+
+.alert {margin-top: 20px;}
+.alert-success {color: #3b723b;}
+.alert-info {color: #2a617d;}
+.alert-warning {color: #856831;}
+.alert-danger {color: #a23f3d;}
+
+.modal-content .modal-body {
+  overflow: auto;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+p.lead {
+  font-size: 1.3em;
+  font-weight: 400;
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+ul.pagination > li > a {
+  &.progress-disabled {
+    float: left;
+  }
+}
+
+
+/* thumbnail boxes
+------------------------------------------------------------------------------- */
+
+.shade {box-shadow: 0px 4px 6px -5px rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.1);}
+
+.panel {
+  &:extend(.shade, .clearfix);
+  display: block; background: #fff; border-radius: 0; border: none;
+}
+
+.nav-tabs a:focus {outline: none;}
+.nav-tabs > li > a {background: #ddd;}
+.nav-tabs > li > a:hover {background: #d5d5d5;}
+.tab-content:extend(.panel) {
+  padding: 25px 16px 10px;
+}
+
+.thumbnail:extend(.panel) {
+  padding: 0;
+}
+
+
+/* forms
+------------------------------------------------------------------------------- */
+.form-control { /* required for extend() */
+  height: 45px;
+  font-size: 16px;
+  background-color: #e1e1e1;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+.form-control-feedback {font-size: 16px; height: 45px;}
+.form-control-feedback {line-height: 45px;}
+.form-control-feedback + .input-group-addon,
+.form-control-feedback + span + .input-group-addon {padding-right: 35px;}
+
+td .form-group {
+  margin: 0 0;
+  * {
+    margin-bottom: 0;
+  }
+}
+
+.btn:focus {outline: thin dotted #000000;}
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default,
+.btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active, .btn-default.active[disabled], fieldset[disabled] .btn-default.active {
+  background-color: #ddd;
+}
+
+.btn + a:not(.btn) {margin-left: 3em;}
+
+input.form-file {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+
+.form-inline .panel-body {
+  display: block;
+  padding: 15px 15px;
+}
+
+th {
+  .checkbox input[type="checkbox"],
+  .checkbox-inline input[type="checkbox"],
+  .radio input[type="radio"],
+  .radio-inline input[type="radio"] {
+    position: relative;
+  }
+}
+.checkbox input[type="checkbox"], 
+.checkbox-inline input[type="checkbox"], 
+.radio input[type="radio"], 
+.radio-inline input[type="radio"] {
+  margin-left: 0;
+}
+.checkbox label,
+.checkbox-inline label,
+label.checkbox,
+label.checkbox-inline,
+label .checkbox,
+label .checkbox-inline {
+  input[type="checkbox"] {
+        margin-left: -20px;
+  }
+}
+.radio label,
+.radio-inline label,
+label.radio,
+label.radio-inline,
+label .radio,
+label .radio-inline {
+  input[type="radio"] {
+        margin-left: -20px;
+  }
+}
+
+label {
+  &.radio-inline,
+  &.checkbox-inline {
+    padding-right: 15px;
+  }
+}
+
+.form-horizontal .form-group label {
+  & + * .form-item {
+    label {
+      padding: 0 0 0 20px;
+      float: none;
+      min-height: 20px;
+      text-align: left;
+    }
+  }
+}
+
+.help-block {
+    color: #999;
+    font-size: 12px;
+    margin: 5px 0 15px;
+    padding: 0;
+}
+.form-group + .help-block {
+  margin-top: -10px;
+}
+@media screen and (min-width: 768px) {
+  .form-horizontal .help-block {
+    margin-left: 25%;
+    padding-left: 5px;
+  }
+}
+
+legend a:focus {
+  outline: initial;
+}
+
+/* tables
+------------------------------------------------------------------------------- */
+table th {
+  a {
+    display: block;
+    position: relative;
+  }
+  &.active {
+    a {
+      padding: 0 25px 0 0;
+    }
+    img {
+      position: absolute;
+      right: 3px;
+      top: 3px;
+    }
+  }
+}
+
+.table-striped tr {
+    background-color: #fff;
+}
+
+/* headings
+------------------------------------------------------------------------------- */
+
+h1 {font-size: 2.8em;}
+h2 {font-size: 2.2em;}
+h3, form legend {font-size: 1.65em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+h6 {
+  font-weight: 600;
+  small {font-weight: 400; }
+}
+
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top: -4px;
+}
+
+.panel-heading {
+  h1, h2, h3 {
+    margin: 5px 0;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  &.pane-title {
+    margin-top: 10px;
+  }
+}

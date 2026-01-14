@@ -1,0 +1,61 @@
+/* header container
+------------------------------------------------------------------------------- */
+
+.jumbotron.headercontainer {
+  background: #ffffff;
+  padding: 20px 0;
+  margin: 0;
+  position: relative;
+  .header.brand img {width: 85%; height: auto; max-width: 332px; max-height: 79px;}
+  .navbar-form {margin: 0;}
+  .form-search {
+    p {margin-bottom: 10px;}
+    .btn {
+      height: 45px;
+      margin-left: 2px;
+      text-align: center;
+      width: 45px;
+      max-width: 19%;
+      float: left;
+    }
+    .form-control {float: left; width: 80%;}
+  }
+}
+
+/* home-hero
+------------------------------------------------------------------------------- */
+
+.home-hero {
+  background: #777777;
+  padding: 0;
+  margin: 0;
+  img {padding: 0; width: 100%; margin: 0;}
+  .titleblock {
+    display: table-cell;
+    vertical-align: middle;
+    height: 70px; /* Min-height for table-cell */
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.3em;
+    position: relative;
+    background: #777777;
+    h1 {
+      font-size: 1.6em;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 0;
+    }
+    h3 {font-size: 1.4em; font-style: italic; margin: 0 0 8px 0;}
+    a {color: #ffffff; text-decoration: none;}
+    a:hover {text-decoration: underline;}
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-hero .titleblock {
+    font-size: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.6em;
+  }
+}

@@ -1,0 +1,100 @@
+<!--begin footer-->
+<!-- Previous searches links next to advanced search link in top search bar / on advanced search screen -->
+
+<!--<script type="text/javascript">
+    $(document).ready(function() {
+    $('.EXLSearchFieldRibbonAdvancedSearchLink').after('<div id="newsearch"></span>&nbsp;<a href="/primo_library/libweb/action/search.do?vid=44UOE_VU1">New Search</a></div>');
+});
+</script> -->
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('.EXLSearchFieldRibbonFormLinks').replaceWith('<div class="EXLSearchFieldRibbonFormLinks"><a href="/primo_library/libweb/action/search.do?vid=44UOE_KIOSK" title="Return to basic search options">Simple Search</a><span style="margin-left:4px;margin-right:4px;color:#ccc;font-size:130%;">|</span><a href="/primo_library/libweb/action/search.do?fn=showBrowse&mode=BrowseSearch&vid=44UOE_KIOSK">Browse Search</a><span style="margin-left:4px;margin-right:4px;color:#ccc;font-size:130%;"</a></div>'); 
+    }); 
+
+$(document).ready(function() {
+
+   var docHeight = $(window).height();
+   var footerHeight = $('.EXLFooterTile').height();
+   var footerTop = $('.EXLFooterTile').position().top + footerHeight;
+
+   if (footerTop < docHeight) {
+    $('.EXLFooterTile').css('margin-top', (docHeight - footerTop) + 'px');
+   }
+});            
+    </script>
+
+<div class="EXLFooterLinksContainer">
+    <div class="centerfooter">
+        <div class="islogo">
+          <!--  <a title="University of Edinburgh Information Services Home" target="_blank" href="http://www.is.ed.ac.uk"> --> <img src="http://discoveredfiles.is.ed.ac.uk/images/islogo.png"> <!-- </a> -->
+        </div>
+        <div class="footerlinks">
+         <!--  <ul class="EXLFooterLinksList1">
+                <li class="EXLFooterFirstLink"><a href="http://www.ed.ac.uk/about/website/website-terms-conditions" target="_blank">Terms &amp; Conditions</a></li>
+                <li><a href="http://www.ed.ac.uk/about/website/privacy" target="_blank">Privacy &amp; Cookies</a></li>
+                <li><a href="http://www.ed.ac.uk/about/website/accessibility" target="_blank">Website Accessibility</a></li>
+                <li><a href="http://www.ed.ac.uk/about/website/freedom-information" target="_blank">Freedom of Information</a></li>
+                <li class="EXLFooterLastLink"><a href="http://www.ed.ac.uk/schools-departments/information-services/about/contacting-is" target="_blank">Contact Us</a></li>
+            </ul> -->
+            <ul class="EXLFooterLinksList2">
+                <li>Unless explicitly stated otherwise, all material is copyright &copy; The University of Edinburgh <script type="text/javascript">
+  <!--
+  var currentTime = new Date()
+  var year = currentTime.getFullYear()
+  document.write(+ year)
+  //-->
+                </script> 
+                </li>
+            </ul>
+        </div>
+    </div>        
+</div>
+
+<!--To provide dual logins -->
+<script>
+
+function urlParam(sParam){
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+
+$(document).ready(function() {
+    var vidval = urlParam('vid');
+    var target = (document.location.href);
+    if (!window.location.origin) {
+          window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+    }
+    var primo_host = (window.location.origin);
+    var pds_url = "https://uoe-shib.hosted.exlibrisgroup.com/pds";
+    var auth_1 = '44UOE_INST';
+    var auth_2 = '44UOE_INST_ALMA';
+    $userarearibbon = $('#exlidUserAreaRibbon.EXLEShelfTileGuest');
+    // alert('View ID: '+vidval+' ; Target: '+target+');
+    // alert('Primo host: '+primo_host+' ; PDS: '+pds_url);
+    if ($userarearibbon.length && (vidval == '44UOE_VU1')) {
+         $('#exlidSignIn.EXLLastItem').hide();
+         $('#exlidMyShelf.EXLMyShelf').after('<li class="DualLogin">Sign in [</li><li id="exlidSignIn" class="EXLSignIn"><a href="'+pds_url+'?lang=eng&func=load-login&institute='+auth_1+'&url='+primo_host+'/primo_library/libweb/action/login.do?targetURL='+target+'" title="UoE members">UoE members</a></li><li class="DualLogin"> | </li><li id="exlidSignIn" class="EXLSignIn EXLLastItem"><a href="'+pds_url+'?lang=eng&func=load-login&institute='+auth_2+'&url='+primo_host+'/primo_library/libweb/action/login.do?targetURL='+target+'" title="Non-members">Non-members</a></li><li class="DualLogin">]</li>');
+    }
+
+});
+</script>
+    <div class="EXLFooterUpdateContainer">
+        <div class="EXLFooterAutoUpdate">
+            <form id="update" name="update" method="post" action="">
+                <input id="allowRefresh_chkbx" type="checkbox" onclick="updateAutoRefresh(this);" checked="checked">
+                <label for="allowRefresh_chkbx">Update my screen automatically</label>
+                <input class="EXLHide" type="submit">
+            </form>
+        </div>
+    </div>
+<!--end footer-->
+

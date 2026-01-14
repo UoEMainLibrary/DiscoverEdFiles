@@ -1,0 +1,216 @@
+// Event asset.
+// ---------------------------------------------------------------------------------------------------------------------
+
+article.event.panel {
+  border: solid 1px #dddddd;
+  margin: 1em 0;
+  background: white;
+  position: relative;
+  &:extend(.clearfix);
+}
+
+// Event node.
+// ---------------------------------------------------------------------------------------------------------------------
+
+// Body.
+.event-body {
+  padding: 2em 0;
+}
+
+// Full node sidebar.
+.event-information {
+  padding-left: 15px;
+  border-left: solid 2px @brand;
+  overflow: hidden;
+}
+
+// Image.
+.event-image {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.row > .event-image {
+  margin-right: -30px;
+}
+
+// Image in full node sidebar.
+.event-information .event-image {
+  margin-top: 0;
+  margin-left: -15px;
+}
+
+// Date and title wrapper.
+.event-date-title {
+  margin: 15px 0 15px 15px;
+  display: table;
+  
+  h3 {
+    padding: 0 15px 0 10px;
+  }
+}
+
+// Date.
+.event-date {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+
+  .date-display-single,
+  .end-date.with-time,
+  .end-date.without-time {
+    padding-right: .75em;
+    border-right: solid 2px @brand;
+  }
+
+
+  .date-display-single {
+    display: block;
+  }
+
+  .start-date,
+  .end-date,
+  .date-separator {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 .1em;
+  }
+
+  .date-range + .date-separator {
+    color: @brand;
+    font-size: 1.9em;
+    font-weight: 700;
+    vertical-align: top;
+    padding: .1em .1em 0;
+  }
+
+  .event-month,
+  .event-day,
+  .event-year {
+    display: block;
+    font-weight: 600;
+    line-height: .8;
+    text-align: center;
+  }
+
+  .event-month {
+    font-size: 1.05em;
+    text-transform: uppercase;
+  }
+
+  .event-day {
+    color: @brand;
+    font-size: 1.9em;
+    font-weight: 700;
+  }
+
+  .event-year {
+    margin-top: .05em;
+  }
+
+  .event-time {
+    display: block;
+    padding-top: .15em;
+    border-top: solid 1px #dddddd;
+    margin-top: .5em;
+    font-size: .9em;
+  }
+
+  .event-time-wrapper {
+    display: block;
+    padding-top: .15em;
+    border-top: solid 1px #dddddd;
+    margin-top: .5em;
+
+    .event-time {
+      padding-top: 0;
+      border-top: none;
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Title.
+.event-title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.25em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.event-summary-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: solid 1px #dddddd;
+  background: white;
+}
+
+.event-summary.panel-body {
+  padding-top: 0;
+}
+
+// Address.
+.event-location-wrapper {
+  position: relative;
+  padding: 15px 15px;
+  border: solid 1px #dddddd;
+  margin-bottom: 15px;
+  background: white;
+
+  .event-location {
+    padding-left: .75em;
+    border-left: solid 2px @brand;
+    margin-left: 2em;
+  }
+
+  > .glyphicon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -.5em;
+  }
+}
+
+// Links.
+.event-link-map,
+.event-link-detail {
+  display: block;
+  padding: .5em .5em .5em 2em;
+  margin-top: 5px;
+  background: @brand;
+  .mixin-text-contrast(@brand);
+  text-decoration: none;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    background: darken(@brand, 5%);
+    .mixin-text-contrast(@brand);
+    text-decoration: none;
+  }
+
+  .glyphicon {
+    position: absolute;
+    left: .6em;
+    top: .6em;
+  }
+}
+
+// Links wrapper.
+.event-links-wrapper {
+  margin-top: -5px;
+}
+
+// Related.
+.event-related {
+  h2.title {
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

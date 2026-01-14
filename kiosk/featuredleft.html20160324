@@ -1,0 +1,25 @@
+<div class="EXLHomeDiscoverEdContainer">
+    <h1>DiscoverEd Search Point</h1>
+    <p>Use this DiscoverEd Search Point to find:</p><br />
+    <h2>Physical Resources:</h2>
+    <ul>
+        <li>Books</li>
+        <li>Journals</li>
+        <li>Audio-visual Resources</li>
+        <li>Musical Scores</li>
+    </ul>
+    <h2>Online Resources:</h2>
+    <ul>
+        <li>eBooks</li>
+        <li>Journal &amp; eJournal Articles</li>
+        <li>Databases</li>
+        <li>Newspapers</li>
+    </ul>
+    <h2>Repositories:</h2>
+    <ul>
+        <li>Conference Proceedings</li>
+        <li>Theses &amp; Dissertations</li>
+        <li>Edinburgh Research Explorer</li>
+        <li>Edinburgh Research Archive</li>
+    </ul>
+</div>

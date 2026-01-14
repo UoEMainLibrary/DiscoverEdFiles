@@ -1,0 +1,57 @@
+.progress-stepped {
+  margin: 0 7em 20px 0;
+}
+
+.progress-steps {
+  display: table;
+  table-layout: fixed;
+  margin: -20px 0 20px 0;
+  padding: 0 0;
+  width: 100%;
+  ol {
+    list-style: none;
+    margin: 0 0;
+    padding: 0 0;
+    display: table-row;
+    li.step {
+      &.completed {
+        color: #aaa;
+      }
+      &.current {
+        font-weight: 600;
+      }
+
+      &:before {
+        content: "\e253"; /* glyphicon-triangle-top */
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 0.8em;
+        margin: 0 0.5em 0 -0.5em;
+        display: block;
+      }
+      display: table-cell;
+      padding: 0 0.7em 0 0;
+      &:last-of-type {
+        width: 7em;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .progress-stepped {
+    margin-right: 5.5em;
+  }
+  .progress-steps ol li.step:last-of-type {
+    width: 5.5em;
+  }
+}
+
+.progress-number {
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 5px 5px;
+  background-color: #ffffff;
+}

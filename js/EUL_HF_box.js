@@ -1,0 +1,113 @@
+/*!
+ * Created by Michael Antczak
+ * Michael.Antczak@ed.ac.uk
+ * The University of Edinburgh
+ *
+ * Date: 2016-03-31
+ */
+
+$(function() {
+
+	// this box is only loaded on brief results page, so no testing is required for the existence
+	// of the div id = "exlidIdeasBrief"
+
+	// add the HTML structure and content for the box, div containers and the content
+	$('#exlidIdeasBrief').append('<div id="iEUL_HF_title"></div>');
+	$('#exlidIdeasBrief').append('<div id="iEUL_HF_content"></div>');
+	$('#iEUL_HF_title').append("<h3>Can't find what you're looking for?</h3>");
+	$('#iEUL_HF_content').append("<h3>Search other libraries:</h3>");
+	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in&nbsp;<span id="iEUL_HF_NLSLink">National Library of Scotland catalogue</span>.</p>');
+	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in&nbsp;<span id="iEUL_HF_copacLink">COPAC</span> (UK Research Libraries).</p>');
+	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in&nbsp;<span id="iEUL_HF_WorldCatLink">WorldCat</span>.</p>');
+
+	$('#iEUL_HF_content').append("<h3>Other options:</h3>");
+	$('#iEUL_HF_content').append('<p>Use <a href="http://www.ed.ac.uk/information-services/library-museum-gallery/finding-resources/library-resources-plus" target="_blank"> Library Resources Plus</a> to help you access the resources you need.</p>');
+
+	// al the CSS to the box
+	$('#exlidIdeasBrief').css({
+
+	})
+
+	$('#iEUL_HF_title').css({
+		'text-align' : 'center',
+		'color' : 'white',
+		'background-clip' : 'border-box',
+		'background-color' : '#1B325E',
+		'padding' : '1em',
+		'width' : '50%',
+    'float' : 'right',
+		'border' : '2px solid rgb(27, 50, 94)',
+		'font-size' : '80%',
+	})
+
+	$('#iEUL_HF_title > h2').css({
+
+	})
+
+	$('#iEUL_HF_content').css({
+		'border' : '2px solid #1B325E',
+		'padding' : '1em 1em 0 1em',
+		'width' : '50%',
+    'float' : 'right',
+		'font-size' : '80%',
+	})
+
+	$('#iEUL_HF_content > p').css({
+		'marginBottom' : '10px'
+	})
+
+	$('#iEUL_HF_content > h3').css({
+		'marginBottom' : '10px'
+	})
+
+	$('.cEUL_HF_searchTerm').css({
+		"background" : "#1B325E",
+		"color" : "white",
+		"padding-left" : "10px",
+		"padding-right" : "10px"
+	})
+
+	// any logic for the box, intercepting search terms for the links and populating the box
+	// find input box with name == vl(freeText0) && id == search_field && read its value
+	// var searchTerm = $('#search_field').val();
+   //$(document).find("title").text().trim();
+	var searchTerm = $(document).find("title").text().trim().replace("DiscoverEd - ", "").replace(/ \//g, "");
+	var uSearchTerm = encodeURI(searchTerm);
+	var serviceLinks = ["http://copac.jisc.ac.uk/search?any=", "http://www.worldcat.org/search?qt=worldcat_org_all&q="];
+
+
+	// populate the box with the search term
+	$('.cEUL_HF_searchTerm').append(searchTerm);
+
+	// create and populate COPAC link
+	var tempLink_c = EUL_createSearchLink_COPAC(uSearchTerm); //
+	$('#iEUL_HF_copacLink').wrap('<a href="' + tempLink_c + '" target="_blank"></a>');
+
+	// create and populate NLS link
+	var tempLink_n = EUL_createSearchLink_NLS(uSearchTerm); //
+	$('#iEUL_HF_NLSLink').wrap('<a href="' + tempLink_n + '" target="_blank"></a>');
+
+	// create and populate WorldCat link
+	var tempLink_w = EUL_createSearchLink_worldcat(uSearchTerm); //
+	$('#iEUL_HF_WorldCatLink').wrap('<a href="' + tempLink_w + '" target="_blank"></a>');
+
+	// create links for outside services COPAC
+	function EUL_createSearchLink_COPAC (searchTerm) {
+		var link = "http://copac.jisc.ac.uk/search?any=" + searchTerm.replace(/\s+/ig, "+");
+		return link;
+	}
+
+	// create links for outside services NLS
+	function EUL_createSearchLink_NLS (searchTerm) {
+		var link = "http://main-cat.nls.uk/vwebv/search?searchArg=" + searchTerm.replace(/\s+/ig, "+") + "&searchCode=FT*&setLimit=1&recCount=25&searchType=1&page.search.search.button=Search";
+		return link;
+	}
+
+	// create links for outside services WoldCat
+	function EUL_createSearchLink_worldcat (searchTerm) {
+		var link = "http://www.worldcat.org/search?qt=worldcat_org_all&q=" + searchTerm.replace(/\s+/ig, "+");
+		return link;
+	}
+
+
+});

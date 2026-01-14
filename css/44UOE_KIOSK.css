@@ -1,0 +1,42 @@
+/* Adjustments needed for Kiosk view */
+
+
+/* Remove personalisation */
+
+#exlidUserAreaRibbon {display:none}
+
+
+/* Remove More and View online tabs as some electronic is deduped and FRBRd with Physical*/
+.EXLResult .EXLMoreTab {display:none;}
+.EXLResult .EXLViewOnlineTab {display:none;}
+
+/* Remove rss feed and add to eshelf option */
+
+.EXLFacetContainer div.EXLFacetActionsV2 li {
+  display:none;
+}
+/* Remove help */
+#exlidMainMenuRibbon li.EXLLastItem {display:none;}
+
+/* styling for dialog boxes */
+.ui-widget-header {
+    background: #1b325e none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
+
+.ui-widget-content {
+    color: #777676 !important;
+}
+
+.ui-widget {
+    font-family: Arial,verdana !important;
+    font-size: 1em !important;
+}
+
+.ui-widget p{
+    font-size: 0.85em !important;
+}
+
+.ui-widget-header .ui-icon {
+    background-color: #dadada !important;
+}

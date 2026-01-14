@@ -1,0 +1,155 @@
+// Default brand colour.  This would normally be overridden by setting the value at
+// a later point in the importing style sheet.
+// Advice on what colours can be used while maintaining the University
+// brand is available from Communications and Marketing.
+@brand: #d50032;
+
+
+.mixin-text-contrast(@n) {
+  @color-brightness: round((red(@n)*299)+(green(@n)*587)+(blue(@n)*114)/1000);
+  @light-color: round((red(#ffffff)*299)+(green(#ffffff)*587)+(blue(#ffffff)*114)/1000);
+  
+  & when (abs(@color-brightness) < (@light-color/1.4)) {
+    color: white;
+  }
+  & when (abs(@color-brightness) >= (@light-color/1.4)) {
+    color: black;
+  }
+}
+
+.mixin-link-contrast(@n) {
+  @color-brightness: round((red(@n)*299)+(green(@n)*587)+(blue(@n)*114)/1000);
+  @light-color: round((red(#ffffff)*299)+(green(#ffffff)*587)+(blue(#ffffff)*114)/1000);
+  
+  & when (abs(@color-brightness) < (@light-color/1.4)) {
+    color: @n;
+  }
+  & when (abs(@color-brightness) >= (@light-color/1.4)) {
+    color: #333;
+  }
+}
+
+.mixin-hover-contrast(@n) {
+  @color-brightness: round((red(@n)*299)+(green(@n)*587)+(blue(@n)*114)/1000);
+  @light-color: round((red(#ffffff)*299)+(green(#ffffff)*587)+(blue(#ffffff)*114)/1000);
+  
+  & when (abs(@color-brightness) < (@light-color/1.4)) {
+    color: darken(@n, 5%);
+  }
+  & when (abs(@color-brightness) >= (@light-color/1.4)) {
+    color: #000;
+  }
+}
+
+
+.topline {border-top-color: @brand; border-bottom-color: darken(@brand, 10%); }
+.home-hero {
+  background: @brand;
+  .titleblock {
+    background: @brand; 
+    a, a:visited {.mixin-text-contrast(@brand);}
+  }
+}
+
+.btn.contact-link, .btn.btn-uoe {
+  background: @brand;
+  border-color: @brand; 
+  .mixin-text-contrast(@brand);
+  &:hover {
+    background: darken(@brand, 5%); border-color: darken(@brand, 5%); .mixin-text-contrast(@brand);    
+  }
+}
+// a, a:visited, .btn-link {.mixin-link-contrast(@brand);}
+//  .content a {
+//    h1, h2, h3, h4, h5, h6, p, ul, ol {.mixin-link-contrast(@brand);}
+//  }
+// a:hover, .btn-link:hover {.mixin-hover-contrast(@brand);}
+//  .content a:hover {
+//    h1, h2, h3, h4, h5, h6, p, ul, ol {.mixin-hover-contrast(@brand);}
+//  }
+.navbar-default .navbar-nav > li {
+  &.active > a, & > a:hover, & > a:focus {.mixin-hover-contrast(@brand);}
+}
+
+.pagination > .active {
+  & > a, & > span, & > a:hover, & > span:hover, & > a:focus, & > span:focus {background: @brand; border-color: @brand; .mixin-text-contrast(@brand);}
+}
+
+.cta li a {background: @brand; .mixin-text-contrast(@brand);}
+.cta li a:hover {background: darken(@brand, 5%);}
+.cta.inverted li a {.mixin-link-contrast(@brand);}
+.cta.inverted li a:hover {background: #fafafa;}
+.cta.inverted li a .glyphicon {.mixin-link-contrast(@brand);}
+
+ul.uoe-left-nav li {
+  a .glyphicon {color: @brand;}
+  a:hover .glyphicon {color: darken(@brand, 5%);}
+  &.active > a {
+    background: @brand;
+    &, .glyphicon {.mixin-text-contrast(@brand);}
+    &:hover {
+      background: darken(@brand, 5%);
+      &, .glyphicon {.mixin-text-contrast(@brand);}
+    }
+  }
+  ul li.expanded:not(.ancestor) > ul li a {border-left: 1px solid @brand;}
+  ul li.expanded:not(.ancestor):not(.active) > a:not(.active) {
+    color: @brand;
+    &:hover {color: darken(@brand, 5%);}
+  }
+}
+  
+blockquote {
+  border-color: @brand;
+}
+
+.panel.uoe-overview, .panel.uoe-overview-medium {
+  .panel-heading {
+    h3 {
+      .mixin-link-contrast(@brand);
+    }
+    h3:hover {
+      .mixin-hover-contrast(@brand);
+    }
+  }
+}
+    
+.panel.uoe-overview-medium {
+  box-shadow: 0 4px 6px -5px rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.1), inset 0 7px 0 @brand;
+}
+
+.panel.uoe-overview-high {
+  .panel-heading {
+    background: @brand;
+    &:hover {
+      background: darken(@brand, 5%);
+    }
+    h3 {
+      .mixin-text-contrast(@brand); 
+    }
+  }
+}
+
+
+.form-search a {
+  &, &:visited {
+    .mixin-link-contrast(@brand);
+  }
+  &:hover {
+    .mixin-hover-contrast(@brand); 
+  }
+}
+
+.pane-title a {
+  .mixin-link-contrast(@brand);
+  &:hover {
+    .mixin-hover-contrast(@brand);
+    text-decoration: underline;
+  }
+}
+
+.page-header.brand {
+  padding-bottom: 9px;
+  margin-bottom: 0;
+  border-bottom: 10px solid @brand;
+}

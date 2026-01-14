@@ -1,0 +1,47 @@
+.panel.uoe-overview, .panel.uoe-overview-medium {
+  .panel-heading {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.panel.uoe-overview-medium {
+  box-shadow: 0 4px 6px -5px rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.1), inset 0 7px 0 #777;
+}
+
+.panel.uoe-overview, .panel.uoe-overview-medium, .panel.uoe-overview-high {
+  .panel-heading {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: none;
+    h3 {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  a:hover, a:active {
+    text-decoration: none;
+  }
+  .panel-body {
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.panel.uoe-overview-high {
+  .panel-heading, .panel-heading:hover {
+    background: #777;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 0;
+  }
+}
+
+.panel.uoe-overview-high a, .panel.uoe-overview-high a:hover {
+  text-decoration: none;
+}
+.panel.uoe-overview-high a:hover h3 {
+  text-decoration: underline;
+}

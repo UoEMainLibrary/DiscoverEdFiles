@@ -1,0 +1,5 @@
+You can either use style.less to compile CSS using the default palette colour (red)
+or use one of the LESS files in the palette/ folder for a different colour.  Contact
+Communications and Marketing for advice on other colours not supplied here.
+
+The gruntfile will recompile these less files if you are updating the repository.

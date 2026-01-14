@@ -1,0 +1,73 @@
+.carousel:extend(.shade) {margin: 0 0 30px;}
+
+.carousel-indicators {
+  padding-bottom: 0;
+  height: 10px;
+  bottom: 50%;
+  top: 4%;
+}
+
+.carousel-inner {
+  background: #fff; 
+  img {
+    max-height: 460px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.carousel-control {
+  width: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  text-shadow: none;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  display: inline-block;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  z-index: 5;
+  height: auto;
+  margin-left: 0;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  left: 0;
+  padding: 20px;
+  margin-left: 0;
+  width: 80px;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  padding: 20px;
+  margin-right: 0;
+  right: 0;
+  width: 80px;
+}
+
+.carousel-control.left span, .carousel-control.right span {
+  background-color: #000000;
+}
+
+.carousel-control.left span:hover, .carousel-control.right span:hover {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.carousel-caption { 
+  position: static;
+  background: #fff; 
+  color: #000; 
+  text-shadow: none;
+  padding: 0 0;
+  margin: 15px 0;
+}
+
+.carousel-inner > .item > img {margin: 0;}
